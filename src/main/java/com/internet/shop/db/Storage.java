@@ -1,4 +1,5 @@
 package com.internet.shop.db;
+
 import com.internet.shop.model.Order;
 import com.internet.shop.model.Product;
 import com.internet.shop.model.ShoppingCart;

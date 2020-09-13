@@ -56,3 +56,4 @@ public class OrderDaoImpl implements OrderDao {
         return Storage.orderStorage.removeIf(order -> order.getId().equals(id));
     }
 }
+

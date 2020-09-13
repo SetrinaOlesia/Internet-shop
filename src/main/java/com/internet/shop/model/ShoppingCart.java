@@ -15,4 +15,3 @@ public class ShoppingCart {
         this.userId = userId;
     }
 }
-
