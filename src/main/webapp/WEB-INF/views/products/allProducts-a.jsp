@@ -14,6 +14,12 @@
     <script crossorigin="anonymous"
             integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background: url("https://funart.pro/uploads/posts/2020-04/1587328224_48-p-svetlie-foni-dlya-saitov-106.jpg") no-repeat;
+            background-size: cover;
+        }
+    </style>
     <title>Admin panel | MyShop</title>
 </head>
 <body>

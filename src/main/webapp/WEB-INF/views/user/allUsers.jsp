@@ -14,17 +14,23 @@
     <script crossorigin="anonymous"
             integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background: url("https://funart.pro/uploads/posts/2020-04/1587328224_48-p-svetlie-foni-dlya-saitov-106.jpg") no-repeat;
+            background-size: cover;
+        }
+    </style>
     <title>All users | MyShop</title>
 </head>
 
 <body>
-<%@include file="../header.jsp"%>
+<%@include file="../header.jsp" %>
 <div class="container">
     <div class="row justify-content-center align-items-center">
         <div style="text-align: center">
             <h3 id="all-users">All users:</h3>
             <p></p>
-            <table class="table table-bordered table-hover" >
+            <table class="table table-bordered table-hover">
                 <thead class="thead-dark">
                 <tr>
                     <th scope="col">ID</th>
@@ -46,7 +52,8 @@
                             <c:out value="${user.name}"/>
                         </td>
                         <td>
-                            <a class="btn btn-danger btn-sm" href="${pageContext.request.contextPath}/users/delete?id=${user.id}">DELETE</a>
+                            <a class="btn btn-danger btn-sm"
+                               href="${pageContext.request.contextPath}/users/delete?id=${user.id}">DELETE</a>
                         </td>
                     </tr>
                 </c:forEach>

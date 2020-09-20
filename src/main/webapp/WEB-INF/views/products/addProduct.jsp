@@ -14,10 +14,16 @@
     <script crossorigin="anonymous"
             integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background: url("https://funart.pro/uploads/posts/2020-04/1587328224_48-p-svetlie-foni-dlya-saitov-106.jpg") no-repeat;
+            background-size: cover;
+        }
+    </style>
     <title>Add Product | MyShop</title>
 </head>
 <body>
-<%@include file="../header.jsp"%>
+<%@include file="../header.jsp" %>
 <h4 style="color: red">${message}</h4>
 <div class="container" align="center">
     <h2>Please enter product name and price:</h2>
@@ -29,7 +35,8 @@
         </div>
         <div class="form-group">
             <label class="col-form-label" for="price">Price:</label>
-            <input class="form-control" id="price" name="price" type="text" style="text-align: center; width: 500px " required>
+            <input class="form-control" id="price" name="price" type="text" style="text-align: center; width: 500px "
+                   required>
         </div>
         <button class="btn btn-primary" type="submit">Save</button>
         <button class="btn btn-secondary" type="reset">Reset</button>
