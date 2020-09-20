@@ -8,13 +8,35 @@ import com.internet.shop.service.ProductService;
 import com.internet.shop.service.ShoppingCartService;
 import com.internet.shop.service.UserService;
 import java.io.IOException;
+
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.log4j.Logger;
+
 @WebServlet("/fill")
 public class FillDataController extends HttpServlet {
+
+    final static Logger logger = Logger.getLogger(FillDataController.class);
+
+    private void runMe(String parameter){
+
+        if(logger.isDebugEnabled()){
+            logger.debug("This is debug : " + parameter);
+        }
+
+        if(logger.isInfoEnabled()){
+            logger.info("This is info : " + parameter);
+        }
+
+        logger.warn("This is warn : " + parameter);
+        logger.error("This is error : " + parameter);
+        logger.fatal("This is fatal : " + parameter);
+
+    }
+
     private static final Injector injector = Injector.getInstance("com.internet.shop");
     private final UserService userService =
             (UserService) injector.getInstance(UserService.class);

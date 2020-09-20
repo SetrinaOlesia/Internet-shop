@@ -15,7 +15,7 @@
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <style>
         body {
-            background: url("https://i.imgur.com/gjb60y0.png") no-repeat;
+            background: url("https://funart.pro/uploads/posts/2020-04/1587328224_48-p-svetlie-foni-dlya-saitov-106.jpg) no-repeat;
             background-size: cover;
         }
     </style>
@@ -24,10 +24,7 @@
 <div class="navbar navbar-expand-sm bg-dark navbar-dark">
     <ul class="navbar-nav">
         <li class="nav-item active">
-            <a class="nav-link" href="${pageContext.request.contextPath}/">HomePage |</a>
-        </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="${pageContext.request.contextPath}/register">Registration |</a>
+            <a class="nav-link" href="${pageContext.request.contextPath}/home">HomePage |</a>
         </li>
         <li class="nav-item active">
             <a class="nav-link" href="${pageContext.request.contextPath}/users">Users |</a>
@@ -41,13 +38,13 @@
         <li class="nav-item active">
             <a class="nav-link" href="${pageContext.request.contextPath}/admin/orders">AllOrders(admin) |</a>
         </li>
-        <li class="nav-item active" style="position: absolute; right: 0px; top: 10px">
+        <li class="nav-item active" style="position: absolute; right: 100px; top: 10px">
             <a class="nav-link" href="${pageContext.request.contextPath}/fill">FillData</a>
         </li>
-        <li class="nav-item active" style="position: absolute; right: 100px; top: 10px">
+        <li class="nav-item active" style="position: absolute; right: 200px; top: 10px">
             <a class="nav-link" href="${pageContext.request.contextPath}/user/orders">MyOrders</a>
         </li>
-        <li class="nav-item active" style="position: absolute; right: 200px; top: 10px">
+        <li class="nav-item active" style="position: absolute; right: 300px; top: 10px">
             <a class="nav-link" href="${pageContext.request.contextPath}/shopping-cart">Shopping cart</a>
         </li>
     </ul>

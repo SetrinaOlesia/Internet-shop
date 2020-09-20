@@ -15,7 +15,7 @@ import java.util.stream.IntStream;
 public class OrderDaoImpl implements OrderDao {
     @Inject
     private ShoppingCartDao shoppingCartDao;
-
+  
     @Override
     public Order create(Order order) {
         Storage.addOrder(order);
@@ -56,4 +56,3 @@ public class OrderDaoImpl implements OrderDao {
         return Storage.orderStorage.removeIf(order -> order.getId().equals(id));
     }
 }
-
