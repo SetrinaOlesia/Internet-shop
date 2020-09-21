@@ -17,7 +17,7 @@
     <title>All users | MyShop</title>
     <style>
         body {
-            background: url("https://funart.pro/uploads/posts/2020-04/1587328224_48-p-svetlie-foni-dlya-saitov-106.jpg") no-repeat;
+            background: url("https://i.imgur.com/gjb60y0.png") no-repeat;
             background-size: cover;
         }
     </style>
@@ -57,7 +57,7 @@
                 </c:forEach>
                 </tbody>
             </table>
-<%--            <a class="btn btn-dark" href="${pageContext.request.contextPath}/products/add">Add new product</a>--%>
+            <a class="btn btn-dark" href="${pageContext.request.contextPath}/products/add">Add new product</a>
             <a class="btn btn-dark" href="${pageContext.request.contextPath}/shopping-cart">Cart</a>
         </div>
     </div>

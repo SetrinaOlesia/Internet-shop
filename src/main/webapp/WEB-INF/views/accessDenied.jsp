@@ -1,5 +1,6 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
+<%@ page contentType="text/html;charset=UTF-8" %>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
@@ -18,10 +19,17 @@
             background-size: cover;
         }
     </style>
-    <title>Home Page</title>
+    <title>Access Denied | MyShop</title>
 </head>
 <body>
-<%@include file="header.jsp"%>
-<h1 style="font-family: 'Monotype Corsiva',fantasy">Hello world</h1>
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+        <div style="text-align: center">
+            <img src="https://digginginthedirt.de/photos/upload/2018/05/26/20180526172235-15859610.gif" alt="You have not access to this page"/>
+            <br>
+            <a class="btn btn-dark" href="${pageContext.request.contextPath}/">Return to main page</a>
+        </div>
+    </div>
+</div>
 </body>
 </html>
