@@ -27,7 +27,7 @@ public class FillDataController extends HttpServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws IOException {
-        User user = new User("Bob", "bob", "123");
+        User user = new User("admin", "admin", "1234");
         user.setRoles(Set.of(Role.of("ADMIN")));
         userService.create(user);
         shoppingCartService.create(new ShoppingCart(1L));
